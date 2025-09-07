@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/Dashboard_v1.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <i class="fa-solid fa-circle-notch"></i>
+            <span>Logo</span>
+        </div>
+        <ul class="menu">
+            <li><i class="fa-solid fa-house"></i> Dashboard</li>
+            <li><i class="fa-solid fa-users"></i> Clientes</li>
+            <li><i class="fa-solid fa-cart-shopping"></i> Ventas</li>
+            <li><i class="fa-solid fa-circle-question"></i> Ayuda</li>
+            <li><i class="fa-solid fa-gear"></i> Configuración</li>
+            <li><i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesión</li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top bar -->
+        <header class="topbar">
+            <i class="fa-solid fa-bars"></i>
+            <input type="text" placeholder="Buscar...">
+            <img src="https://i.pravatar.cc/40" class="profile-pic">
+        </header>
+
+        <!-- Stats -->
+        <section class="stats">
+            <div class="card purple"><i class="fa-solid fa-eye"></i>
+                <h3>2,345</h3>
+                <p>Visitas</p>
+            </div>
+            <div class="card pink"><i class="fa-solid fa-cash-register"></i>
+                <h3>1,342</h3>
+                <p>Ventas</p>
+            </div>
+            <div class="card blue"><i class="fa-solid fa-envelope"></i>
+                <h3>475</h3>
+                <p>Mensajes</p>
+            </div>
+            <div class="card green"><i class="fa-solid fa-chart-line"></i>
+                <h3>$6,879</h3>
+                <p>Ganancias</p>
+            </div>
+        </section>
+
+        <!-- Orders and Clients -->
+        <section class="content">
+            <!-- Orders -->
+            <div class="orders">
+                <h2>Órdenes Recientes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Pago</th>
+                            <th>Estatus</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Laptop HP</td>
+                            <td>$120</td>
+                            <td>Pendiente</td>
+                            <td><span class="status pendiente">Pendiente</span></td>
+                        </tr>
+                        <tr>
+                            <td>AirPods</td>
+                            <td>$89</td>
+                            <td>Pagado</td>
+                            <td><span class="status devuelto">Devuelto</span></td>
+                        </tr>
+                        <tr>
+                            <td>PC Dell</td>
+                            <td>$650</td>
+                            <td>Pendiente</td>
+                            <td><span class="status progreso">En Progreso</span></td>
+                        </tr>
+                        <tr>
+                            <td>iPhone 14</td>
+                            <td>$4500</td>
+                            <td>Pagado</td>
+                            <td><span class="status pendiente">Pendiente</span></td>
+                        </tr>
+                        <tr>
+                            <td>Apple Watch</td>
+                            <td>$750</td>
+                            <td>Pagado</td>
+                            <td><span class="status entregado">Entregado</span></td>
+                        </tr>
+                        <tr>
+                            <td>Micrófono Blue Yeti</td>
+                            <td>$120</td>
+                            <td>Pendiente</td>
+                            <td><span class="status progreso">En Progreso</span></td>
+                        </tr>
+                        <tr>
+                            <td>Web Cam Logitech</td>
+                            <td>$67</td>
+                            <td>Pagado</td>
+                            <td><span class="status entregado">Entregado</span></td>
+                        </tr>
+                        <tr>
+                            <td>Audífonos Sereen</td>
+                            <td>$249</td>
+                            <td>Pendiente</td>
+                            <td><span class="status devuelto">Devuelto</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Clients -->
+            <div class="clients">
+                <h2>Nuevos Clientes</h2>
+                <ul>
+                    <li><img src="https://i.pravatar.cc/30?img=1"> John Doe <span><i class="fa-solid fa-message"></i> <i
+                                class="fa-solid fa-phone"></i></span></li>
+                    <li><img src="https://i.pravatar.cc/30?img=2"> Olivia Anderson <span><i
+                                class="fa-solid fa-message"></i> <i class="fa-solid fa-phone"></i></span></li>
+                    <li><img src="https://i.pravatar.cc/30?img=3"> Ethan Thompson <span><i
+                                class="fa-solid fa-message"></i> <i class="fa-solid fa-phone"></i></span></li>
+                    <li><img src="https://i.pravatar.cc/30?img=4"> Benjamin Mitchell <span><i
+                                class="fa-solid fa-message"></i> <i class="fa-solid fa-phone"></i></span></li>
+                    <li><img src="https://i.pravatar.cc/30?img=5"> Sophia Reynolds <span><i
+                                class="fa-solid fa-message"></i> <i class="fa-solid fa-phone"></i></span></li>
+                    <li><img src="https://i.pravatar.cc/30?img=6"> Ava Roberts <span><i class="fa-solid fa-message"></i>
+                            <i class="fa-solid fa-phone"></i></span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="../scripts/Dashboard_v1.js"></script>
+</body>
+
+</html>
